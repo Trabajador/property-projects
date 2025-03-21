@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+Property Projects Grid
+A responsive React application for displaying property project cards with custom pagination and image slider, built without using any external libraries.
+Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Responsive grid layout that adjusts to different screen sizes
+Custom-built image slider with hover navigation
+Manual pagination implementation with page number display
+API integration with error handling
+Loading state management
 
-## Available Scripts
+Implementation Details
+Project Structure
+The application is structured into several components:
 
-In the project directory, you can run:
+App: Main component handling API requests and state management
+ProjectGrid: Responsible for laying out the project cards in a responsive grid
+ProjectCard: Displays individual property information
+ImageSlider: Custom implementation for image navigation
+Pagination: Custom-built pagination with numbered pages
+ErrorMessage: Displays error states with retry functionality
+LoadingSpinner: Shows loading state while fetching data
 
-### `npm start`
+Technical Implementation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+API Integration
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Implemented fetch API to get property data
+Added proper error handling for API requests
+Included loading states for better user experience
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Custom Image Slider
 
-### `npm run build`
+Built without external libraries using React state
+Navigation arrows appear on hover
+Dot indicators for available images
+Responsive design for all screen sizes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Custom Pagination
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Implemented page navigation using React state
+First, previous, next, and last page buttons
+Active page highlighting
+Dynamic page number generation
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Responsive Design
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Grid layout adjusts from 3 columns to 2 columns to 1 column based on screen size
+Mobile-friendly interface
+Appropriate spacing and sizing for all elements
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Error Handling
 
-## Learn More
+Proper error display with user-friendly messages
+Retry functionality for failed API requests
+Fallback image for properties without images
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+How to Run the Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Clone the repository
 
-### Analyzing the Bundle Size
+git clone https://github.com/your-username/property-projects-grid.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Navigate to the project directory
 
-### Making a Progressive Web App
+cd property-projects-grid
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Install dependencies
 
-### Advanced Configuration
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Start the development server
 
-### Deployment
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open http://localhost:3000 to view it in the browser
