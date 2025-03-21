@@ -75,9 +75,15 @@ The application is structured into several components:
     ```bash
     npm install
 
-4. **Start the development server:**
+4. **Create a .env.local file:**:
+
+    ```bash
+    REACT_APP_API_KEY=your_api_key_here
+    REACT_APP_SECRET_KEY=your_secret_key_here
+
+5. **Start the development server:**
 
     ```bash
     npm start
 
-5. **Open the browser and go to http://localhost:3000 to view the application.**
+6. **Open the browser and go to http://localhost:3000 to view the application.**
