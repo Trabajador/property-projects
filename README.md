@@ -1,3 +1,5 @@
+# [Live](https://trabajador.github.io/property-projects/)
+
 # Property Projects Grid
 
 A responsive React application for displaying property project cards with custom pagination and an image slider, built without using any external libraries.
@@ -36,7 +38,6 @@ The application is structured into several components:
 
 - **React State**: Built without external libraries using React state for managing the image slider.
 - **Hover Navigation**: Navigation arrows appear on hover for better user interaction.
-- **Dot Indicators**: Dots represent available images in the slider.
 - **Responsive**: Designed to work across different screen sizes.
 
 #### Custom Pagination
