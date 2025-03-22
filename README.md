@@ -69,7 +69,7 @@ The application is structured into several components:
 2. **Navigate to the project directory:**
 
     ```bash
-    cd property-projects-grid
+    cd property-projects
 
 3. **Install dependencies:**
 
