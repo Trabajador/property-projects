@@ -68,10 +68,12 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
 
       <button
         className="page-button"
+        onClick={() => onPageChange(totalPages - 1)}
         disabled={currentPage === totalPages - 1}
       >
         &raquo;
       </button>
+
     </div>
   );
 }
